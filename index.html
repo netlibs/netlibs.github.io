@@ -5,6 +5,21 @@
 	</head>
 
 	<body>
+
+		<div>The easiest way to handle projects with dependencies between projects is using <a href="https://github.com/prezi/pride">prezi pride</a>.  Once you've installed it:</div>
+
+		<pre>mkdir netlibs</pre>
+
+		<pre>pride init</pre>
+
+		<pre>pride add https://github.com/netlibs/io.netlibs.bgp.git</pre>
+		<pre>pride add https://github.com/netlibs/io.netlibs.ipaddr.git</pre>
+		<pre>pride add https://github.com/netlibs/io.netlibs.flow.git</pre>
+
+		<div>You can then build with all dependencies:</div>
+
+		<pre>gradle assemble</pre>
+
 	</body>
 
 </html>
